@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <style>
+        body { font-family: -apple-system, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; color: #333; }
+        .container { text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Redirecting to VolvoUWBUnlock...</p>
+    </div>
+    <script>
+        // Forward the OAuth callback to the app's custom URL scheme
+        var params = window.location.search;
+        window.location.href = "volvouwbunlock://callback" + params;
+    </script>
+</body>
+</html>
